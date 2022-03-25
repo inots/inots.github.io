@@ -25,17 +25,17 @@ body {
     font-size: 8em;
 }
 
-.content h2:nth-child(1) {
+.water h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #03a9f4;
 }
 
-.content h2:nth-child(2) {
+.water h2:nth-child(2) {
     color:#03a9f4;
-    animation: animate 4s ease-in-out infinite;
+    animation: water 4s ease-in-out infinite;
 }
 
-@keyframes animate {
+@keyframes water {
     0%,100% 
 	{
 		clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
