@@ -15,7 +15,8 @@
 } */
 
 .content {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -28,6 +29,12 @@
     /* color: #fff; */
     transform: translate(-50%, -50%);
     font-size: 8em;
+}
+
+.water {
+    flex: 1 1 100%;   
+    position: relative;
+    left: 50%;
 }
 
 .water h2:nth-child(1) {
@@ -49,6 +56,13 @@
 	{
 		clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
 	}
+}
+
+.earth {
+    position: relative;
+    left: 50%;
+    flex: 1 1 100%;
+    color: white;
 }
 
 .earth h2::before {
