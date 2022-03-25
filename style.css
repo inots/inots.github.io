@@ -25,12 +25,12 @@ body {
     font-size: 8em;
 }
 
-.content h2 #first {
+.content #first {
     color: transparent;
     -webkit-text-stroke: 2px #03a9f4;
 }
 
-.content h2 #second {
+.content #second {
     color:#03a9f4;
     animation: animate 4s ease-in-out infinite;
 }
