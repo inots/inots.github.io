@@ -15,7 +15,7 @@
 } */
 
 .content {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
