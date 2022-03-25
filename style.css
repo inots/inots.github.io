@@ -25,7 +25,22 @@ body {
     font-size: 8em;
 }
 
-.content h2 :first {
+.content h2 #first {
     color: transparent;
     -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2 #second {
+    color:#03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        clip-path: polygon(0% 43%, 11% 38%, 27% 38%, 36% 42%, 46% 51%, 61% 58%, 81% 60%, 94% 51%, 100% 42%, 100% 100%, 0% 99%);
+    }
+
+    50%{
+        clip-path: polygon(100% 48%, 88% 40%, 78% 36%, 62% 37%, 52% 43%, 39% 53%, 25% 60%, 10% 59%, 0% 54%, 1% 100%, 100% 100%);
+    }
 }
