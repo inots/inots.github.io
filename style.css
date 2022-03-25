@@ -6,15 +6,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #000;
-}
+} */
 
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
     position: relative;
 }
 
@@ -44,4 +49,25 @@ body {
 	{
 		clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
 	}
+}
+
+.earth h2::before {
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: earth 5.5s linear forwards;
+}
+
+@keyframes earth {
+    0% 
+    {
+        left:120%;
+    }
+    100%
+    {
+        left: -20%;
+    }
 }
