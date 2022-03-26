@@ -98,13 +98,10 @@ video {
     }
 } */
 
-video {
-    object-fit: cover;
-}
 
 .wind {
     position: relative;
-    left: 50%;
+    /* left: 50%; */
     flex: 1 1 100%;
     color: white;
     letter-spacing: 0.2em;
@@ -122,6 +119,9 @@ video {
     pointer-events: none;
 }
 
+video {
+    object-fit: cover;
+}
 .wind h2 span {
     display: inline-block;
     opacity: 0;
