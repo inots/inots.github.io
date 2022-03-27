@@ -80,6 +80,7 @@ body {
     }
 }
 
+/* smoke video sourced online */
 video {
     object-fit: cover;
     height: 100vh;
