@@ -125,7 +125,7 @@ video {
     object-fit: cover;
 }
 .wind h2 {
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
 }
 
