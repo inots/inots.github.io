@@ -6,36 +6,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
-} */
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  
+  min-height: 100%;
+  hegiht: 100%;
+}
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 100%;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
-    position: relative;
+  width: 50%;
+  min-height: 100%;
+  hegiht: 100%;
+  text-align: center;
 }
 
 .content h2 {
-    position: absolute;
-    /* color: #fff; */
-    transform: translate(-50%, -50%);
+    position: relative;
     font-size: 8em;
 }
 
-.water {
-    flex: 1 1 100%;   
+.water h2{
     position: absolute;
-    left: 50%;
+    left: 15%;
+    top: 50%;
 }
 
 .water h2:nth-child(1) {
@@ -59,94 +57,42 @@
 	}
 }
 
-/* .earth {
-    position: relative;
-    left: 50%;
-    flex: 1 1 100%;
-    color: white;
-}
-
-.earth h2::before {
-    content: '';
-    position: absolute;
-    left: 110%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
-    animation: earth 5.5s linear forwards;
-}
-
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-    pointer-events: none;
-    mix-blend-mode: screen;
-}
-
-@keyframes earth {
-    0% 
-    {
-        left:120%;
-    }
-    100%
-    {
-        left: -20%;
-    }
-} */
-
-
 .wind {
-    position: absolute;
-    /* left: 50%; */
-    height: 100vf;
-    /* background: #000; */
-    flex: 1 1 100%;
-    color: white;
-    letter-spacing: 0.2em;
+  background: grey;
+  color: white;
+  letter-spacing: 0.2em;
 }
 
 .wind:before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    /* background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff); */
-    /* mix-blend-mode: color; */
     pointer-events: none;
 }
 
 @supports (mix-blend-mode: color) {
-
     .wind:before {
-
         background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff);
-
         mix-blend-mode: color;
-
     }
-
 }
 
 video {
     object-fit: cover;
     height: 100vh;
-    width: 100%;
+    width: 50%;
 }
+
 
 .wind h2 {
     margin: 0;
     padding: 0;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+    width: 50%;
     text-align: center;
     color: #fff;
     font-size: 5em;
