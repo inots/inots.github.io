@@ -62,8 +62,7 @@ body {
   background: black;
   color: white;
   letter-spacing: 0.2em;
-  border-style: solid;
-  border-color: white;
+  border-left: solid white;
 }
 
 .wind:before {
