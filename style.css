@@ -17,10 +17,11 @@
 .content {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 100%;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fff;
+    background: #000;
     position: relative;
 }
 
@@ -33,7 +34,7 @@
 
 .water {
     flex: 1 1 100%;   
-    position: relative;
+    position: absolute;
     left: 50%;
 }
 
@@ -100,8 +101,8 @@ video {
 
 
 .wind {
-    position: relative;
-    left: 50%;
+    position: absolute;
+    // left: 50%;
     height: 100vf;
     /* background: #000; */
     flex: 1 1 100%;
@@ -141,7 +142,7 @@ video {
 .wind h2 {
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
