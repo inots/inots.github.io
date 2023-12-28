@@ -1,18 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 * {
-    margin: 0;
-    padding: 0;
+    margin: 30;
+    padding: 30;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Georgia;
+    /* font-family: 'Poppins', sans-serif; */
+
+    @media screen and (max-width: 600px) {
+        margin: 15;
+        padding: 15;
+    }
+}
+
+header {
+
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    nav {
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            color: #344E41;
+            list-style: none;
+
+            @media screen and (max-width: 600px) {
+                flex-direction: row;
+                /* align-items: space-between; */
+            }
+        }
+
+
+    }
 }
 
 body {
-  display: flex;
+
+    border: 2px solid black;
+  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: white;
   border-style: solid;
   border-color: #fff;
   min-height: 100%;
