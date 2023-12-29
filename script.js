@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadContent('home.html');
 
     // Attach event listeners to navigation links
-    document.getElementById('home').addEventListener('click', () => loadContent('home.html'));
-    document.getElementById('about').addEventListener('click', () => loadContent('about.html'));
+    document.getElementById('home').addEventListener('click', () => loadContent('/content/home.html'));
+    document.getElementById('about').addEventListener('click', () => loadContent('/content/about.html'));
 });
 
 function loadContent(page) {
